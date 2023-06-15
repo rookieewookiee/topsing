@@ -3,23 +3,65 @@
 <head>
 <title>대한민국 여가수 탑3</title>
 <meta charset="utf-8">
+<style>
+    #main {
+    display:grid;
+    grid-template-columns: 200px 1fr;
+    border-bottom:5px solid green;
+}
+#title {
+padding-left:10px;
+    padding-top:10px;
+    text-align:center;
+}
+ol img {
+    width:200px;
+}
+#pic img {
+    padding-top:20px;
+    padding-bottom:10px;
+}
+ol {
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    font-size:20px;
+    list-style-type:disc;
+}
+a {
+    text-decoration:none;
+}
+@media(max-width:700px)
+{
+    #main {
+        display:block;
+    }
+    ol {
+        display:block;
+    }
+}
+</style>
 </head>
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-GF86RYBMFD"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-GF86RYBMFD');
-</script>
 <body>
-    <a href="index.html"><h1>Korean woman singer TOP 3
-        <br>(대한민국 여가수 탑3)</h1></a>
+<div id="main">
+    <div id="pic">
+        <a href="index.html">
+     <img src="korean.jpg" width="200px">
+        </a>
+    </div>
+    <div id="title">
+        <a href="index.html">
+     <h1>Korean woman singer TOP 3
+        <br>(대한민국 여가수 탑3)</h1>
+    </a>
+    </div>
+</div>
 <ol>
-    <li><a href="kim.html">Kim, Na-young(김나영)</a></li>
-    <li><a href="lee.html">Lee, Ye-jun(이예준)</a></li>
-    <li><a href="park.html">Park, Hye-won(박혜원)</a></li>
+    <li><a href="kim.html">Kim, Na-young(김나영)</a>
+       <p></p> <a href="kim.html"><img src="kim.jpg"></a></li>
+    <li><a href="lee.html">Lee, Ye-jun(이예준)</a>
+        <p></p>  <a href="lee.html"><img src="lee.jpg"></a></li>
+    <li><a href="park.html">Park, Hye-won(박혜원)</a>
+        <p></p> <a href="park.html"><img src="park.jpg"></a></li>
 </ol>
 </body>
 </html>
